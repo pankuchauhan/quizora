@@ -1,0 +1,135 @@
+/* Premium Toast Notifications - Modern & Beautiful */
+
+/* Success Toast - Green Gradient with Glow */
+.premium-toast-success {
+  background: linear-gradient(135deg, #11998e, #38ef7d) !important;
+  color: white !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.1) inset !important;
+  backdrop-filter: blur(10px) !important;
+  animation: slideInRight 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+/* Error Toast - Red Gradient with Glow */
+.premium-toast-error {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+  color: white !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.1) inset !important;
+  backdrop-filter: blur(10px) !important;
+  animation: slideInRight 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+/* Warning Toast - Orange Gradient */
+.premium-toast-warning {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+  color: white !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+  animation: slideInRight 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+/* Info Toast - Blue Gradient */
+.premium-toast-info {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+  color: white !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+  animation: slideInRight 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+/* Custom Dark Toast */
+.premium-toast-dark {
+  background: linear-gradient(135deg, #2c3e50, #3498db) !important;
+  color: white !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3) !important;
+  animation: slideInRight 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+/* Animations */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Toast Container Styling */
+:root {
+  --toastify-toast-min-height: 60px;
+  --toastify-toast-max-height: 80px;
+  --toastify-toast-width: 400px;
+}
+
+.Toastify__toast-container {
+  width: 420px !important;
+  z-index: 9999 !important;
+}
+
+.Toastify__toast {
+  font-family: 'Segoe UI', 'Poppins', Tahoma, Geneva, Verdana, sans-serif !important;
+  border-radius: 16px !important;
+  margin-bottom: 12px !important;
+}
+
+.Toastify__toast-body {
+  font-size: 14px !important;
+  padding: 8px 0 !important;
+}
+
+.Toastify__close-button {
+  color: white !important;
+  opacity: 0.7 !important;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1 !important;
+}
+
+/* Progress bar colors */
+.Toastify__progress-bar--success {
+  background: linear-gradient(90deg, #11998e, #38ef7d) !important;
+}
+
+.Toastify__progress-bar--error {
+  background: linear-gradient(90deg, #f093fb, #f5576c) !important;
+}
+
+.Toastify__progress-bar--warning {
+  background: linear-gradient(90deg, #fa709a, #fee140) !important;
+}
+
+.Toastify__progress-bar--info {
+  background: linear-gradient(90deg, #4facfe, #00f2fe) !important;
+}
