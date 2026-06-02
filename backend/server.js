@@ -8,8 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ DIRECT CONNECTION STRING (Already added - No env variable needed)
-const MONGODB_URI = 'mongodb+srv://quizora:Panku2910@cluster0.vba3ltt.mongodb.net/quizora_db?retryWrites=true&w=majority';
+// ✅ NEW CONNECTION STRING (Tumhara naya wala)
+const MONGODB_URI = 'mongodb+srv://pankuchauhan2910_db_user:45YiujgQvEV6daMk@cluster0.4o0s4vf.mongodb.net/quizora_db?retryWrites=true&w=majority';
 
 // MongoDB Connection
 mongoose.connect(MONGODB_URI)
